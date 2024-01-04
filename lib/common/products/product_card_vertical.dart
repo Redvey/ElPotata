@@ -1,3 +1,4 @@
+import 'package:epotata/common/widgets/texts/e_brand_title_with_verified_text_icon.dart';
 import 'package:epotata/common/styles/shadows.dart';
 import 'package:epotata/common/widgets/custom_shapes/containers/circular_container.dart';
 import 'package:epotata/common/widgets/icons/e_circular_icons.dart';
@@ -89,24 +90,7 @@ class EProductCardVertical extends StatelessWidget {
                     SizedBox(
                       height: TSizes.spaceBtwItems / 2,
                     ),
-                    Row(
-                      children: [
-                        Text(
-                          'Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium,
-                        ),
-                        SizedBox(
-                          width: TSizes.iconXs,
-                        ),
-                        Icon(
-                          Iconsax.verify5,
-                          color: Palette.primary,
-                          size: TSizes.iconXs,
-                        )
-                      ],
-                    ),
+                    EBrandTitleWithVerifiedIcon(title: "Nike",),
                     // add spacer to keep height of each box same in case 1 or 2 lines of heading
 
 
@@ -146,5 +130,7 @@ class EProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+
 
 

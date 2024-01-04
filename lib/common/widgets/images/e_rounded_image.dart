@@ -1,3 +1,4 @@
+// ignore: unused_import
 import 'package:epotata/utils/constants/palette.dart';
 import 'package:flutter/material.dart';
 
